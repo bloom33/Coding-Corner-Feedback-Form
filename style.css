@@ -1,0 +1,296 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  color: #2b2b2b;
+}
+
+/* Styles to show thank you message */
+
+[data-show="thank-you"] {
+  display: none;
+}
+
+[data-state="thank-you"] [data-show="default"] {
+  display: none;
+}
+
+[data-state="thank-you"] [data-show="thank-you"] {
+  display: flex;
+}
+
+.thank-you {
+  width: 100%;
+  height: calc(100vh - 83.5px);
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 24px;
+}
+
+.thank-you__icon {
+  font-size: 90px;
+  color: #55daa2;
+}
+
+.thank-you__message {
+  font-size: 28px;
+  font-weight: bold;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Page Styles */
+
+.header {
+  padding: 8px 32px;
+  background-color: #2b2b2b;
+  color: #ffffff;
+}
+
+.nav {
+  list-style-type: none;
+  padding: 0;
+}
+
+.logo {
+  font-size: 20px;
+  font-family: "Inconsolata", "Open Sans", sans-serif;
+  font-weight: 400;
+  color: #2eb27b;
+}
+
+.subtitle {
+  display: none;
+  font-family: "Inconsolata", "Open Sans", sans-serif;
+  font-size: 20px;
+  margin: 0 0 0 24px;
+}
+
+.nav__item {
+  margin: 0 10px;
+}
+
+.nav__link {
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.nav__link:hover {
+  text-decoration: underline;
+}
+
+.contact__link {
+  display: none;
+  background-color: #55daa2;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 8px 12px;
+  font-size: 14px;
+  margin-left: 24px;
+  border-radius: 2px;
+}
+
+.contact__link:hover {
+  background-color: #2eb27b;
+}
+
+.contact__link i {
+  margin-right: 6px;
+}
+
+.form__section {
+  padding: 24px;
+}
+
+.form__section--one {
+  background-color: #f5f5f5;
+}
+
+.form__section--two {
+  background-color: #ebebeb;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+legend {
+  width: 100%;
+}
+
+.form__field:not(:first-child) {
+  margin-top: 24px;
+}
+
+.form__input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  border-radius: 2px;
+  border: 1px solid #ffffff;
+  font-size: 14px;
+}
+
+.form__label {
+  margin: 0;
+}
+
+.form__required {
+  color: #ee4949;
+  font-size: 12px;
+  margin: 0;
+}
+
+textarea.form__input {
+  min-height: 200px;
+  border-radius: 2px;
+  border: 1px solid #ffffff;
+}
+
+.form__submit {
+  background-color: #55daa2;
+  border: 0;
+  border-radius: 2px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 16px;
+  width: 100%;
+  display: block;
+  margin-top: 16px;
+  cursor: pointer;
+}
+
+.form__submit:hover {
+  background-color: #2eb27b;
+}
+
+@media (min-width: 640px) {
+  .contact__link {
+    display: block;
+  }
+}
+
+@media (min-width: 1024px) {
+  .subtitle {
+    display: block;
+  }
+}
+
+/* Layout Styles
+ * 
+ * All styles above this line are for design purposes only.
+ * For these challenges do not change any of the code above this point.
+ * However, you can reference them for learning purposes.
+ */
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav {
+  display: flex;
+  flex: 1 0 auto;
+  justify-content: center;
+}
+
+@media (min-width: 640px) {
+  .nav {
+    justify-content: flex-end;
+  }
+}
+
+textarea.form__input {
+  flex: 1;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form__section {
+  flex: 1 1 525px;
+}
+
+.form__section--two {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 3;
+}
+
+.form__section--two .form__field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.form__info > :first-child {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Radio Button Styles */
+
+.form__scale-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: flex;
+}
+
+.form__scale-item {
+  flex: 1;
+}
+
+.form__scale-value {
+  padding: 14px;
+  font-size: 14px;
+  border: 1px solid #f5f5f5;
+  margin: 0 1px;
+  border-radius: 2px;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  background-color: #ffffff;
+}
+
+.form__scale-legend {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form__scale-input:checked ~ .form__scale-value {
+  background-color: #55daa2;
+}
+
+.form__scale-input:invalid ~ .form__scale-value,
+.form__input:invalid {
+  border: 1px solid #ee4949;
+}
+
+.form__scale-input {
+  position: absolute;
+  left: -9999px;
+}

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Feedback | Coding Corner</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Inconsolata|Open+Sans:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/9faec82d34.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body data-state="default">
+    <header class="header">
+      <h1 class="logo">_CodingCorner</h1>
+      <p class="subtitle">//co-working space for developers</p>
+      <ul class="nav">
+        <li class="nav__item"><a class="nav__link" href="/">Memberships</a></li>
+        <li class="nav__item"><a class="nav__link" href="/">Location</a></li>
+        <li class="nav__item"><a class="nav__link" href="/">Amenities</a></li>
+      </ul>
+      <p class="contact">
+        <a class="contact__link" href="/"><i class="fa fa-user"></i> Sign In</a>
+      </p>
+    </header>
+    <main>
+      <form class="form" action="" data-show="default">
+        <div class="form__section form__section--one">
+          <h2 class="form__heading">
+            We always want to be the best we can be!
+          </h2>
+          <fieldset>
+            <legend class="form__info">
+              <div>
+                <p class="form__label">
+                  How likely are you to recommend _CodingCorner to a friend?
+                </p>
+                <p class="form__required">required</p>
+              </div>
+              <div class="form__scale-legend">
+                <p>Very Unlikely</p>
+                <p>Very Likely</p>
+              </div>
+            </legend>
+            <ul class="form__scale-list">
+              <li class="form__scale-item">
+                <input
+                  required
+                  class="form__scale-input"
+                  type="radio"
+                  name="happiness"
+                  id="happy-1"
+                  value="1"
+                />
+                <label class="form__scale-value" for="happy-1">1</label>
+              </li>
+              <li class="form__scale-item">
+                <input
+                  required
+                  class="form__scale-input"
+                  type="radio"
+                  name="happiness"
+                  id="happy-2"
+                  value="2"
+                />
+                <label class="form__scale-value" for="happy-2">2</label>
+              </li>
+              <li class="form__scale-item">
+                <input
+                  required
+                  class="form__scale-input"
+                  type="radio"
+                  name="happiness"
+                  id="happy-3"
+                  value="3"
+                />
+                <label class="form__scale-value" for="happy-3">3</label>
+              </li>
+
+              <li class="form__scale-item">
+                <input
+                  required
+                  class="form__scale-input"
+                  type="radio"
+                  name="happiness"
+                  id="happy-4"
+                  value="4"
+                />
+                <label class="form__scale-value" for="happy-4">4</label>
+              </li>
+
+              <li class="form__scale-item">
+                <input
+                  required
+                  class="form__scale-input"
+                  type="radio"
+                  name="happiness"
+                  id="happy-5"
+                  value="5"
+                />
+                <label class="form__scale-value" for="happy-5">5</label>
+              </li>
+
+              <li class="form__scale-item">
+                <input
+                  required
+                  class="form__scale-input"
+                  type="radio"
+                  name="happiness"
+                  id="happy-6"
+                  value="6"
+                />
+                <label class="form__scale-value" for="happy-6">6</label>
+              </li>
+
+              <li class="form__scale-item">
+                <input
+                  required
+                  class="form__scale-input"
+                  type="radio"
+                  name="happiness"
+                  id="happy-7"
+                  value="7"
+                />
+                <label class="form__scale-value" for="happy-7">7</label>
+              </li>
+
+              <li class="form__scale-item">
+                <input
+                  required
+                  class="form__scale-input"
+                  type="radio"
+                  name="happiness"
+                  id="happy-8"
+                  value="8"
+                />
+                <label class="form__scale-value" for="happy-8">8</label>
+              </li>
+
+              <li class="form__scale-item">
+                <input
+                  required
+                  class="form__scale-input"
+                  type="radio"
+                  name="happiness"
+                  id="happy-9"
+                  value="9"
+                />
+                <label class="form__scale-value" for="happy-9">9</label>
+              </li>
+
+              <li class="form__scale-item">
+                <input
+                  required
+                  class="form__scale-input"
+                  type="radio"
+                  name="happiness"
+                  id="happy-10"
+                  value="10"
+                />
+                <label class="form__scale-value" for="happy-10">10</label>
+              </li>
+            </ul>
+          </fieldset>
+          <div class="form__field">
+            <div class="form__info">
+              <label for="how-long">
+                <p class="form__label">
+                  How long have you been co-working here?
+                </p>
+                <p class="form__required">required</p>
+              </label>
+            </div>
+            <input
+              required
+              class="form__input"
+              type="text"
+              name="how-long"
+              id="how-long"
+            />
+          </div>
+          <div class="form__field">
+            <div class="form__info">
+              <label class="form__label-wrapper" for="best">
+                <p class="form__label">
+                  What is your favorite part about our space?
+                </p>
+                <p class="form__required">required</p>
+              </label>
+            </div>
+            <input
+              required
+              class="form__input"
+              type="text"
+              name="best"
+              id="best"
+            />
+          </div>
+          <div class="form__field">
+            <div class="form__info">
+              <label class="form__label-wrapper" for="worst">
+                <p class="form__label">
+                  What part of our space could we improve?
+                </p>
+                <p class="form__required">required</p>
+              </label>
+            </div>
+            <input
+              required
+              class="form__input"
+              type="text"
+              name="worst"
+              id="worst"
+            />
+          </div>
+        </div>
+        <div class="form__section form__section--two">
+          <div class="form__field">
+            <div class="form__info">
+              <label class="form__label-wrapper" for="magic">
+                <p class="form__label">
+                  If you had a magic wand and could change anything about
+                  _CodingCorner, what would it be?
+                </p>
+              </label>
+            </div>
+            <textarea class="form__input" name="magic" id="magic"></textarea>
+          </div>
+          <input class="form__submit" type="submit" value="Submit Feedback" />
+        </div>
+      </form>
+      <div class="thank-you" data-show="thank-you">
+        <i class="thank-you__icon fa fa-glass-cheers"></i>
+        <p class="thank-you__message">Thank you for giving us your feedback!</p>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
